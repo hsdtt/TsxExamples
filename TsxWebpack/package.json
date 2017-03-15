@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "name": "tsx-webpack-example",
+  "main": "js/main.js",
+  "private": true,
+  "scripts": {
+    "compile": "tsc",
+    "bundle": "webpack",
+    "bundle-min": "webpack --env=prod",
+    "bd": "npm-run-all compile bundle",
+    "br": "npm-run-all compile bundle-min"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.0.2",
+    "typescript": "^2.2.1",
+    "webpack": "^2.2.1"
+  },
+  "dependencies": {
+    "@types/jquery": "^2.0.39",
+    "@types/react": "^15.0.0",
+    "@types/react-dom": "^0.14.20"
+  }
+}

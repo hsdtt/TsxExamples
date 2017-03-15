@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "name": "tsx-browersify-example",
+  "main": "js/main.js",
+  "private": true,
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "browserify-shim": "^3.8.12",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^2.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "yargs": "^6.0.0",
+    "gulp-rename": "^1.2.2"
+  },
+  "browserify-shim": {
+    "react": "global:React",
+    "react-dom": "global:ReactDOM",
+    "jquery": "global:$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "dependencies": {
+    "@types/jquery": "^2.0.39",
+    "@types/react": "^15.0.0",
+    "@types/react-dom": "^0.14.20"
+  }
+}

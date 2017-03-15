@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "inlineSourceMap": true,
+    "outDir": "./js",
+    "declaration": true,
+    "target": "es5"
+  },
+  "files": ["ts/main.tsx"]
+}
